@@ -13,22 +13,67 @@
 
 <div id="navi">
 
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#">Pricing</a>
         </li>
       </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </nav>
+
+
+
+    <div id="leftSide">
+
+        
+  <div id="selector">
+    <div class="form-group col-md-4">
+      <label for="inputState">Date</label>
+        <input type="date" id="birthday" name="birthday">
+      </select>
     </div>
 
+
+    <div class="form-group col-md-4">
+      <label for="inputState">Location</label>
+      <select id="inputState" class="form-control">
+        <option selected>Lingotto</option>
+        <option>Moncalieri</option>
+        <option>Nizza</option>
+        <option>Porta Nuova</option>
+        <option>Vinzaglio</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputState">Ospiti</label>
+      <select id="inputState" class="form-control">
+        <option selected>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+
+    <div>
 <div id="carrousel">
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -75,6 +120,12 @@
 
     </div>
 
+
+    </div>
+
+    
+    
+    
 
     <script>
         // Function to redirect to the desired website
