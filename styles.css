@@ -1,0 +1,11 @@
+#carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carousel img{
+    height: 300px;
+    width: 300px;
+}
