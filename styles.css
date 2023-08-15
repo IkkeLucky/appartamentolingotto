@@ -38,3 +38,12 @@
     margin: 0;
     padding: 0;
   }
+
+.feh-content h3 {
+    font-size: 15px;
+}
+
+.feh-content img {
+    width: 150px;
+    height: 150px;
+}

@@ -47,31 +47,79 @@ const markers = [
                 const marker2 = new google.maps.Marker({position: parco, map: map});
                 const marker3 = new google.maps.Marker({position: lingotto, map: map});
 
-            }
+                const infoWindow = new google.maps.InfoWindow({
+                    minWidth: 200,
+                    maxWidth: 200
+                })
 
 
 
- const infoWindow = new google.maps.infoWindow({
-        minWidth: 200,
-        maxWidth: 200
-    })
-   
+                function createInfoWindow () {
+                    const infoWindowContent = `
+                    <div class="feh-content">
+                        <img src="img/appa3.webp" alt="third apartment">
+                        <h3>Apartment Porta Nuova</h3>
+                        <a href="#">View in maps</a>
+                    </div>
+                    `;
+
+                    const infoWindowContent2 = `
+                    <div class="feh-content">
+                        <img src="img/appb3.webp" alt="third apartment">
+                        <h3>Apartment Parco Valentino</h3>
+                    </div>
+                    `;
+
+                    const infoWindowContent3 = `
+                    <div class="feh-content">
+                        <img src="img/appc3.webp" alt="third apartment">
+                        <h3>Apartment Lingotto</h3>
+                    </div>
+                    `;
+                
+                    google.maps.event.addListener (marker, 'click', function() {
+                        infoWindow.setContent(infoWindowContent);
+                        infoWindow.open(map, marker);
+                    });
+
+                    google.maps.event.addListener (marker2, 'click', function() {
+                        infoWindow.setContent(infoWindowContent2);
+                        infoWindow.open(map, marker2);
+                    });
+
+                    google.maps.event.addListener (marker3, 'click', function() {
+                        infoWindow.setContent(infoWindowContent3);
+                        infoWindow.open(map, marker3);
+                    });
+
+                    
+
+                }
 
 
-//     for(let i=0; i < markers.length; i++) {
-//         const marker = new google.maps.Marker({
-//             position: { lat: markers[i]['lat'], lng: markers[i]['lng'] },
-//             map: map
-//         });
+                createInfoWindow();
 
+                
 
-//         function createInfoWindow () {
-//             const infoWindowContent = `
-
-//             `
-//         }
-//     }
+                
+                bounds.extend(new google.maps.LatLng(marker['lat'], marker['lng']));
+                bounds.extend(new google.maps.LatLng(marker2['lat'], marker['lng']));
+                bounds.extend(new google.maps.LatLng(marker3['lat'], marker['lng']));
 
 
 
-// }
+                
+                map.fitBounds(bounds)
+
+                infoWindow.addListener('closeclick', function() {
+                    map.fitBounds(bounds);
+                });
+
+                const bounds = new google.maps.LatLngBounds();
+
+
+
+
+
+
+                }
