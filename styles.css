@@ -14,16 +14,11 @@
 #selector {
     display: flex;
     justify-content: start;
-    height: 150px;
+    height: 50px;
     width: 500px;
     margin-top: 15px;
-    background-color: aqua;
 }
 
-#leftSide {
-    height: 80vh;
-    background-color: black;
-}
 
 #map {
     height: 100%;
@@ -46,4 +41,38 @@
 .feh-content img {
     width: 150px;
     height: 150px;
+}
+
+#totalHero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.leftSide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+}
+
+#mapSide {
+    height: 600px;
+    width: 600px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+#selector {
+    margin-left: 50px;
+}
+
+#carrousel h2 {
+    font-size: 25px;
 }

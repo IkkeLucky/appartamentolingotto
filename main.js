@@ -49,7 +49,7 @@ const markers = [
 
                 const infoWindow = new google.maps.InfoWindow({
                     minWidth: 200,
-                    maxWidth: 200
+                    maxWidth: 900
                 })
 
 
