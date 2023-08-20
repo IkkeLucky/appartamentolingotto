@@ -1,38 +1,3 @@
-#carrousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: red;
-}
-
-.carousel img{
-    height: 300px;
-    width: 300px;
-}
-
-#selector {
-    display: flex;
-    justify-content: start;
-    height: 50px;
-    width: 500px;
-    margin-top: 15px;
-}
-
-
-#map {
-    height: 100%;
-  }
-  
-  /* 
-   * Optional: Makes the sample page fill the window. 
-   */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
 
 .feh-content h3 {
     font-size: 15px;
@@ -42,35 +7,67 @@
     width: 150px;
     height: 150px;
 }
-
-#totalHero{
+#carrousel {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    height: 100vh;
+    background-color: red;
+    overflow-y: auto;
 }
 
-.leftSide {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
-    height: 1000px;
-}
-
-#mapSide {
-    height: 600px;
-    width: 600px;
-}
-
-.btn {
-    width: 100px;
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 100px;
+.carousel img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #selector {
-    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    margin-top: 15px;
+}
+
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#totalHero {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow for the container */
+}
+
+.leftSide {
+    flex: 1; /* Allow the content to take available space */
+    max-width: 800px; /* Limit the maximum width */
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#mapSide {
+    flex: 1; /* Allow the content to take available space */
+    position: relative; /* So the absolute position works as expected */
+}
+
+#mapSide #map {
+    width: 100%; /* Adjust the map's width */
+    height: 95vh; /* Make sure the map takes full height */
+}
+
+.btn {
+    width: auto; /* Adjust button width */
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 50px; /* Adjust margin */
 }
 
 #carrousel h2 {

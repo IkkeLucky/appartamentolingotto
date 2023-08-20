@@ -30,12 +30,15 @@ const markers = [
 
 
                 const mapOptions = {
-                    center: new google.maps.LatLng(45.070379, 7.677555),
-                    zoom: 12,
+                    center: new google.maps.LatLng(45.062880, 7.678361),
+                    zoom: 13,
                     gestureHandling: "greedy",
                     disableDefaultUI: true,
                     markers
                 };
+
+
+                
 
 
                 const portaNuova = {lat: 45.065196, lng: 7.674213};
@@ -111,11 +114,14 @@ const markers = [
                 
                 map.fitBounds(bounds)
 
+                
+
                 infoWindow.addListener('closeclick', function() {
                     map.fitBounds(bounds);
                 });
 
                 const bounds = new google.maps.LatLngBounds();
+
 
 
 
