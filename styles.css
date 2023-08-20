@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    width: 1px;
+}
 
 .feh-content h3 {
     font-size: 15px;
@@ -7,6 +10,42 @@
     width: 150px;
     height: 150px;
 }
+
+#selector {
+    display: flex;
+    justify-content: space-between; /* Horizontally align items */
+    align-items: center; /* Vertically align items */
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#selector * {
+    box-sizing: border-box; /* Include padding and border within width */
+    padding: 0;
+    margin: 0;
+}
+
+#selector input[type="text"],
+#selector input[type="date"],
+#selector button {
+    padding: 8px; /* Add padding for space within input and button */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+#selector button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
 #carrousel {
     display: flex;
     justify-content: center;
@@ -16,18 +55,20 @@
     overflow-y: auto;
 }
 
+#carouselExampleFade {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: 15px;
+    padding: 15px;
+}
+
 .carousel img {
     max-width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
 }
 
-#selector {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    margin-top: 15px;
-}
+
 
 #map {
     height: 100%;
@@ -42,15 +83,15 @@ html, body {
 #totalHero {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden; /* Hide overflow for the container */
 }
 
 .leftSide {
-    flex: 1; /* Allow the content to take available space */
-    max-width: 800px; /* Limit the maximum width */
+    width: 65%;
     overflow-y: scroll;
     height: 100%;
+    margin-top: 15px;
 }
 
 #mapSide {
@@ -60,16 +101,61 @@ html, body {
 
 #mapSide #map {
     width: 100%; /* Adjust the map's width */
-    height: 95vh; /* Make sure the map takes full height */
+    height: 100vh; /* Make sure the map takes full height */
 }
 
 .btn {
-    width: auto; /* Adjust button width */
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 50px; /* Adjust margin */
+    height: 40px;
+    margin-top: 22px;
+    margin-left: 10px; /* Adjust margin */
 }
+
+#birthday {
+    width: 100%;
+    border: 1px solid rgb(206, 212, 218);
+    padding: .3rem;
+}
+
 
 #carrousel h2 {
     font-size: 25px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    
+    #map {
+        visibility: hidden;
+    }
+
+    .leftSide {
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        width: 98%;
+    }
+
+    #selector {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        background-color: #007bff;
+    }
+
+    #selector .btn {
+        margin-top: 40px;
+    }
+
+    #selector .form-control {
+        margin-right: 100px;
+    }
+
+    
 }
