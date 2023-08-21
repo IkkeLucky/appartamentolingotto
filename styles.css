@@ -11,74 +11,7 @@
     height: 150px;
 }
 
-#selector {
-    display: flex;
-    justify-content: space-between; /* Horizontally align items */
-    align-items: center; /* Vertically align items */
-    padding: 0;
-    margin: 0;
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#selector * {
-    box-sizing: border-box; /* Include padding and border within width */
-    padding: 0;
-    margin: 0;
-}
-
-#selector input[type="text"],
-#selector input[type="date"],
-#selector button {
-    padding: 8px; /* Add padding for space within input and button */
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    padding: 0;
-    margin: 0;
-}
-
-#selector button {
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-
-#carrousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: red;
-    overflow-y: auto;
-}
-
-#carouselExampleFade {
-    display: block;
-    width: 400px;
-    height: 400px;
-    margin: 15px;
-    padding: 15px;
-}
-
-.carousel img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-
-#map {
-    height: 100%;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+/* GENERAL STYLING */
 
 #totalHero {
     display: flex;
@@ -91,7 +24,138 @@ html, body {
     width: 65%;
     overflow-y: scroll;
     height: 100%;
-    margin-top: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* NAVBAR */
+
+
+.nav-link {
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #2da4aa!important;
+}
+
+
+/* SELECTOR SEARCH ENGINE */
+
+#selector {
+    display: flex;
+    justify-content: space-between; /* Horizontally align items */
+    align-items: center; /* Vertically align items */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #2da4aa;
+}
+
+#selector * {
+    box-sizing: border-box; /* Include padding and border within width */
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+#selector button {
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+#birthday {
+    width: 100%;
+    border: 1px solid rgb(206, 212, 218);
+    padding: .3rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 10px!important;
+}
+
+.btn {
+    height: 40px;
+    background-color: #fb9322;
+    border-color: white;
+}
+
+.btn:hover {
+    background-color: #fb9322;
+}
+
+.ri-earth-line {
+    color: whitesmoke;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+.ri-team-line {
+    color: whitesmoke;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* CARROUSEL IMAGES AND CARDS */
+
+#carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#carouselExampleFade {
+    display: block;
+    width: 470px;
+    height: 470px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .3);
+}
+
+#carouselExampleFade em {
+    font-size: 12px;
+    padding-top: 0!important;
+    padding-left: 10px;
+}
+
+#carrousel h2 {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.carousel img {
+    width: 470px;
+    height: 350px;
+}
+
+
+.cardLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+/* MAP SIDE */
+
+#map {
+    height: 100%;
 }
 
 #mapSide {
@@ -104,30 +168,16 @@ html, body {
     height: 100vh; /* Make sure the map takes full height */
 }
 
-.btn {
-    height: 40px;
-    margin-top: 22px;
-    margin-left: 10px; /* Adjust margin */
-}
-
-#birthday {
-    width: 100%;
-    border: 1px solid rgb(206, 212, 218);
-    padding: .3rem;
-}
 
 
-#carrousel h2 {
-    font-size: 25px;
+
+@media only screen and (max-width: 989px) and (min-width: 770px) {
+    
 }
 
 
 
-
-
-
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     
     #map {
         visibility: hidden;
@@ -146,16 +196,27 @@ html, body {
         display: block;
         padding: 10px;
         margin: 10px;
-        background-color: #007bff;
+        background-color: #2da4aa;
+        border-radius: 10px;
     }
 
     #selector .btn {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
-    #selector .form-control {
-        margin-right: 100px;
+    #carouselExampleFade {
+        width: 400px;
+        height: 400px;
     }
 
+    .nav-link:hover {
+        color: #fb9322!important;
+    }
+
+    .carousel img {
+        width: 375px;
+        height: 350px;
+    }
+    
     
 }
