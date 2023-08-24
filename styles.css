@@ -79,6 +79,30 @@
     margin-bottom: 10px!important;
 }
 
+.form-group a {
+  display: flex;
+  align-items: center;
+  background-color: #fb9322;
+  color: whitesmoke;
+  border: 1px solid black ;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+#searchIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+
+.form-group a:hover {
+  color: whitesmoke;
+  background-color: #fb9322;
+}
+
 .btn {
     height: 40px;
     background-color: #fb9322;
@@ -125,6 +149,7 @@
 }
 
 #carouselExampleFade em {
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     padding-top: 0!important;
     padding-left: 10px;
@@ -145,9 +170,13 @@
 
 .cardLogos {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.cardLogos i {
+  margin-left: 15px;
 }
 
 
@@ -310,10 +339,10 @@
         width: 100%;
     }
 
-    .btn {
-        display: block;
-        width: 98%;
+    .form-group a {
+      width: 100%;
     }
+
 
     #selector {
         display: block;
@@ -339,6 +368,10 @@
     .carousel img {
         width: 375px;
         height: 350px;
+    }
+
+    .container {
+      height: 4000;
     }
     
     

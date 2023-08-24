@@ -17,35 +17,32 @@
 
 <body>
 
-<div id="navi">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo1.jpeg" style="width: 100px; height: 70px;" alt="image">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="appartamenti.html">Appartamenti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Affiti Lunghi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="singlepage.html">Gestisci Prenotazione</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contattaci.html">Contattaci</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-</div>
+    <div id="navi">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo1.jpeg" style="width: 100px; height: 70px;" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appartamenti.html">Appartamenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="singlepage.html">Scopri Torino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contattaci.html">Contattaci</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
 
 
 <div id="totalHero">
@@ -80,11 +77,10 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group col-md-2">
-                <button type="button" class="btn btn-primary"><i class="ri-search-line"></i><span>Cerca</span></button>
+            <div id="searchButton" class="form-group col-md-2">
+                <a href="appartamenti.html"><i id="searchIcon" class="ri-search-line"></i>Cerca</a>
             </div>
         </div>
-
 
 
         <div class="cardsCarrousel">
@@ -92,36 +88,32 @@
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartA/a1.webp" alt="Third slide"> </a>
+                            <a href="singlepage.html" target="_blank"> <img class="d-block w-100" src="img/appartA/a1.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartA/a2.webp" alt="Third slide"> </a>
+                            <a href="singlepage.html" target="_blank"> <img class="d-block w-100" src="img/appartA/a2.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartA/a3.webp" alt="Third slide"> </a>
+                            <a href="singlepage.html" target="_blank"> <img class="d-block w-100" src="img/appartA/a3.webp" alt="Third slide"> </a>
                         </div>
                     </div>
                     <div class="carouselCardContent">
                         <div>
-                            <h2>Soggiorno Lungo Via Genova 1P DX</h2>
-                            <em>Via Arsenale 32 - Torino</em>
+                            <h2>Appartamento Lingotto</h2>
+                            <em>Via Ellero</em>
                         </div>
                         <div class="cardLogos">   
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-user-fill"></i>
                                 6 Ospiti
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-hotel-bed-fill"></i>
                                 2 camara di letto
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-drop-fill"></i>
                                 2 bagni
-                            </div>
-                            <div>
-                                <i class="ri-star-s-fill"></i>
-                                55m3
                             </div>
                         </div>
                     </div>
@@ -130,36 +122,32 @@
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartB/b1.webp" alt="Third slide"> </a>
+                            <a href="singlepage-b.html" target="_blank"> <img class="d-block w-100" src="img/appartB/b1.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartB/b2.jpg" alt="Third slide"> </a>
+                            <a href="singlepage-b.html" target="_blank"> <img class="d-block w-100" src="img/appartB/b2.jpg" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartB/b3.webp" alt="Third slide"> </a>
+                            <a href="singlepage-b.html" target="_blank"> <img class="d-block w-100" src="img/appartB/b3.webp" alt="Third slide"> </a>
                         </div>
                     </div>
                     <div class="carouselCardContent">
                         <div>
-                            <h2>Soggiorno Lungo Via Genova 1P DX</h2>
-                            <em>Via Arsenale 32 - Torino</em>
+                            <h2>Home Lingotto</h2>
+                            <em>Via Genova 70</em>
                         </div>
                         <div class="cardLogos">   
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-user-fill"></i>
                                 6 Ospiti
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-hotel-bed-fill"></i>
                                 2 camara di letto
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-drop-fill"></i>
                                 2 bagni
-                            </div>
-                            <div>
-                                <i class="ri-star-s-fill"></i>
-                                55m3
                             </div>
                         </div>
                     </div>
@@ -168,36 +156,32 @@
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartC/c1.webp" alt="Third slide"> </a>
+                            <a href="singlepage-c.html" target="_blank"> <img class="d-block w-100" src="img/appartC/c1.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartC/c2.jpg" alt="Third slide"> </a>
+                            <a href="singlepage-c.html" target="_blank"> <img class="d-block w-100" src="img/appartC/c2.jpg" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartC/c3.jpg" alt="Third slide"> </a>
+                            <a href="singlepage-c.html" target="_blank"> <img class="d-block w-100" src="img/appartC/c3.jpg" alt="Third slide"> </a>
                         </div>
                     </div>
                     <div class="carouselCardContent">
                         <div>
-                            <h2>Soggiorno Lungo Via Genova 1P DX</h2>
-                            <em>Via Arsenale 32 - Torino</em>
+                            <h2>Soggiorno Lungo Via Genova 2P SX</h2>
+                            <em>Via Genova 70</em>
                         </div>
                         <div class="cardLogos">   
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-user-fill"></i>
                                 6 Ospiti
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-hotel-bed-fill"></i>
                                 2 camara di letto
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-drop-fill"></i>
                                 2 bagni
-                            </div>
-                            <div>
-                                <i class="ri-star-s-fill"></i>
-                                55m3
                             </div>
                         </div>
                     </div>
@@ -206,36 +190,32 @@
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartD/d1.webp" alt="Third slide"> </a>
+                            <a href="singlepage-d.html" target="_blank"> <img class="d-block w-100" src="img/appartD/d1.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartD/d2.webp" alt="Third slide"> </a>
+                            <a href="singlepage-d.html" target="_blank"> <img class="d-block w-100" src="img/appartD/d2.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartD/d3.webp" alt="Third slide"> </a>
+                            <a href="singlepage-d.html" target="_blank"> <img class="d-block w-100" src="img/appartD/d3.webp" alt="Third slide"> </a>
                         </div>
                     </div>
                     <div class="carouselCardContent">
                         <div>
-                            <h2>Soggiorno Lungo Via Genova 1P DX</h2>
-                            <em>Via Arsenale 32 - Torino</em>
+                            <h2>Soggiorno Lungo Via Genova PT SX Itcilo</h2>
+                            <em>Via Genova 70</em>
                         </div>
                         <div class="cardLogos">   
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-user-fill"></i>
                                 6 Ospiti
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-hotel-bed-fill"></i>
                                 2 camara di letto
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-drop-fill"></i>
                                 2 bagni
-                            </div>
-                            <div>
-                                <i class="ri-star-s-fill"></i>
-                                55m3
                             </div>
                         </div>
                     </div>
@@ -244,36 +224,32 @@
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartE/e1.webp" alt="Third slide"> </a>
+                            <a href="singlepage-e.html" target="_blank"> <img class="d-block w-100" src="img/appartE/e1.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartE/e2.jpeg" alt="Third slide"> </a>
+                            <a href="singlepage-e.html" target="_blank"> <img class="d-block w-100" src="img/appartE/e2.jpeg" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartE/e3.jpeg" alt="Third slide"> </a>
+                            <a href="singlepage-e.html" target="_blank"> <img class="d-block w-100" src="img/appartE/e3.jpeg" alt="Third slide"> </a>
                         </div>
                     </div>
                     <div class="carouselCardContent">
                         <div>
-                            <h2>Soggiorno Lungo Via Genova 1P DX</h2>
-                            <em>Via Arsenale 32 - Torino</em>
+                            <h2>La palazzina 1 piano SX</h2>
+                            <em>Via Genova 70</em>
                         </div>
                         <div class="cardLogos">   
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-user-fill"></i>
                                 6 Ospiti
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-hotel-bed-fill"></i>
                                 2 camara di letto
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-drop-fill"></i>
                                 2 bagni
-                            </div>
-                            <div>
-                                <i class="ri-star-s-fill"></i>
-                                55m3
                             </div>
                         </div>
                     </div>
@@ -282,36 +258,32 @@
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartF/f1.webp" alt="Third slide"> </a>
+                            <a href="singlepage-f.html" target="_blank"> <img class="d-block w-100" src="img/appartF/f1.webp" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartF/f2.jpg" alt="Third slide"> </a>
+                            <a href="singlepage-f.html" target="_blank"> <img class="d-block w-100" src="img/appartF/f2.jpg" alt="Third slide"> </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.passarelladiosa.com/"> <img class="d-block w-100" src="img/appartF/f3.jpg" alt="Third slide"> </a>
+                            <a href="singlepage-f.html" target="_blank"> <img class="d-block w-100" src="img/appartF/f3.jpg" alt="Third slide"> </a>
                         </div> 
                     </div>
                     <div class="carouselCardContent">
                         <div>
                             <h2>Soggiorno Lungo Via Genova 1P DX</h2>
-                            <em>Via Arsenale 32 - Torino</em>
+                            <em>Via Genova 70</em>
                         </div>
                         <div class="cardLogos">   
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-user-fill"></i>
                                 6 Ospiti
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-hotel-bed-fill"></i>
                                 2 camara di letto
                             </div>
                             <div>
-                                <i class="ri-star-s-fill"></i>
+                                <i class="ri-drop-fill"></i>
                                 2 bagni
-                            </div>
-                            <div>
-                                <i class="ri-star-s-fill"></i>
-                                55m3
                             </div>
                         </div>
                     </div>
