@@ -89,24 +89,55 @@
       width: 100%;
       margin-top: 30px;
       padding: 10px;
-      background-color: #007bff;
+      background-color: #fb9322;
       color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
+
+    .contactWhatsapp p {
+      position: fixed;
+      right: 50px;
+      bottom: 120px;
+      color: #2fa75b;
+      font-weight: bold;
+      text-shadow: 1px 1px black;
+    }
+
+    .contactWhatsapp i {
+      position: fixed;
+      right: 50px;
+      bottom: 30px;
+      font-size: 80px;
+      color: #2fa75b;
+      text-shadow: 1px 1px black;
+    }
+
     @media (max-width: 600px) {
       .container {
         margin: 50px auto;
         padding: 15px;
         width: 350px;
-        height: 480px;
+        height: 550px;
+      }
+
+      body {
+      height: 130vh;
+      }
+
+
+      .contactWhatsapp p {
+        position: fixed;
+        bottom: 10px;
+        visibility: hidden;
       }
     }
   </style>
 
     <div class="container">
       <h1>Contact Us</h1>
+      <p>We are always happy to get a message from you! Our <a href = "mailto: torinoinhome@gmail.com" style="text-decoration: none; color: #fb9322; font-weight: bold; text-shadow: 1px 1px black;">Email</a> box is always open</p>
       <form action="#" method="post">
         <div class="form-group">
           <label for="name"></label>
@@ -114,7 +145,7 @@
         </div>
         <div class="form-group">
           <label for="email"></label>
-          <input type="email" id="email" name="email" required placeholder="Email">
+          <input type="email" id="email" name="email" required placeholder="Your Email">
         </div>
         <div class="form-group">
           <label for="subject"></label>
@@ -126,6 +157,11 @@
         </div>
         <button type="submit" class="submit-button">Submit</button>
       </form>
+    </div>
+
+    <div class="contactWhatsapp">
+      <p>Send a Whatsapp Message! </p>
+      <a href="https://wa.me/393934544596" style="text-decoration: none;"><i class="ri-whatsapp-line"></i></a>
     </div>
 
 

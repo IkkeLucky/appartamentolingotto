@@ -58,7 +58,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 120vh;
         object-fit: cover;
         z-index: -1;
     }
@@ -77,7 +77,6 @@
 
     #search-bar {
         width: 100%;
-        max-width: 400px;
         padding: 10px;
         border: none;
         border-radius: 20px;
@@ -86,6 +85,68 @@
         background-color: #2da4aa;
         color: whitesmoke;
     }
+
+    .titleIndex h2 {
+        margin-top: 400px;
+        color: whitesmoke;
+        text-shadow: 2px 2px #000000;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .titleIndex {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .cardsIndex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    #register {
+        margin-top: 50px;
+    }
+
+    .cardsIndex h2 {
+        color: whitesmoke;
+        margin-top: 10px;
+    }
+
+    .fade-in-bottom {
+	-webkit-animation: fade-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+	        animation: fade-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 
     #search-bar:hover {
         color: black;
@@ -116,12 +177,184 @@
     </form>
   </div>
 
+ 
+  <div class="titleIndex">
+    <h2>Nostri appartamenti</h2>
+  </div>
+
+  <div class="cardsIndex">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="singlepage.html" target="_blank"> <img class="d-block w-100" src="img/appartA/a1.webp" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage.html" target="_blank"> <img class="d-block w-100" src="img/appartA/a2.webp" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage.html" target="_blank"> <img class="d-block w-100" src="img/appartA/a3.webp" alt="Third slide"> </a>
+            </div>
+        </div>
+        <div class="carouselCardContent">
+            <div>
+                <h2>Appartamento Lingotto</h2>
+                <em>Via Ellero</em>
+            </div>
+            <div class="cardLogos" style="color: whitesmoke;">   
+                <div>
+                    <i class="ri-user-fill" ></i>
+                    6 Ospiti
+                </div>
+                <div>
+                    <i class="ri-hotel-bed-fill"></i>
+                    2 camara di letto
+                </div>
+                <div>
+                    <i class="ri-drop-fill"></i>
+                    2 bagni
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="singlepage-b.html" target="_blank"> <img class="d-block w-100" src="img/appartB/b1.webp" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage-b.html" target="_blank"> <img class="d-block w-100" src="img/appartB/b2.jpg" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage-b.html" target="_blank"> <img class="d-block w-100" src="img/appartB/b3.webp" alt="Third slide"> </a>
+            </div>
+        </div>
+        <div class="carouselCardContent">
+            <div>
+                <h2>Home Lingotto</h2>
+                <em>Via Genova 70</em>
+            </div>
+            <div class="cardLogos" style="color: whitesmoke;">   
+                <div>
+                    <i class="ri-user-fill"></i>
+                    6 Ospiti
+                </div>
+                <div>
+                    <i class="ri-hotel-bed-fill"></i>
+                    2 camara di letto
+                </div>
+                <div>
+                    <i class="ri-drop-fill"></i>
+                    2 bagni
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="singlepage-c.html" target="_blank"> <img class="d-block w-100" src="img/appartC/c1.webp" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage-c.html" target="_blank"> <img class="d-block w-100" src="img/appartC/c2.jpg" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage-c.html" target="_blank"> <img class="d-block w-100" src="img/appartC/c3.jpg" alt="Third slide"> </a>
+            </div>
+        </div>
+        <div class="carouselCardContent">
+            <div>
+                <h2>Soggiorno Lungo Via Genova 2P SX</h2>
+                <em>Via Genova 70</em>
+            </div>
+            <div class="cardLogos" style="color: whitesmoke;">   
+                <div>
+                    <i class="ri-user-fill"></i>
+                    6 Ospiti
+                </div>
+                <div>
+                    <i class="ri-hotel-bed-fill"></i>
+                    2 camara di letto
+                </div>
+                <div>
+                    <i class="ri-drop-fill"></i>
+                    2 bagni
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="singlepage-d.html" target="_blank"> <img class="d-block w-100" src="img/appartD/d1.webp" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage-d.html" target="_blank"> <img class="d-block w-100" src="img/appartD/d2.webp" alt="Third slide"> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="singlepage-d.html" target="_blank"> <img class="d-block w-100" src="img/appartD/d3.webp" alt="Third slide"> </a>
+            </div>
+        </div>
+        <div class="carouselCardContent">
+            <div>
+                <h2>Soggiorno Lungo Via Genova PT SX Itcilo</h2>
+                <em>Via Genova 70</em>
+            </div>
+            <div class="cardLogos" style="color: whitesmoke;">   
+                <div>
+                    <i class="ri-user-fill"></i>
+                    6 Ospiti
+                </div>
+                <div>
+                    <i class="ri-hotel-bed-fill"></i>
+                    2 camara di letto
+                </div>
+                <div>
+                    <i class="ri-drop-fill"></i>
+                    2 bagni
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script>
+        function checkScroll() {
+            const tarjeta = document.querySelector('.cardsIndex');
+            const tarjetaPosition = tarjeta.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+    
+            // Si la parte superior de la tarjeta está en el viewport
+            if (tarjetaPosition < windowHeight) {
+                // Agrega la clase de animación a la tarjeta
+                tarjeta.classList.add('fade-in-bottom');
+            } else {
+                // Si la tarjeta está fuera de la vista, elimina la clase de animación
+                tarjeta.classList.remove('fade-in-bottom');
+            }
+        }
+    
+        // Agrega un evento de desplazamiento para verificar cuando el usuario hace scroll
+        window.addEventListener('scroll', checkScroll);
+    
+        // Llama a la función una vez al cargar la página para verificar el estado inicial
+        window.addEventListener('load', checkScroll);
+    </script>
+    
+    
 
     <hr>
 
