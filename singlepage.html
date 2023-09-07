@@ -19,6 +19,11 @@
 
 <body>
 
+  
+
+
+
+
   <div id="navi">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">
@@ -46,56 +51,7 @@
     </nav>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="img/appartA/a1.webp"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a2.webp"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a4.webp"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a5.webp"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a6.jpg"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a9.webp"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a15.jpg"/>
-    </div>
-    <div class="swiper-slide">
-      <img src="img/appartA/a19.jpg"/>
-    </div>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</div>
-
-
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-</script>
 
 
 <div id="titleSingle">
@@ -103,6 +59,7 @@
   <em>Via Ellero</em>
   <hr>
 </div>
+
 
 <div id="detailsSingle">
   <h3>Descrizione</h3>
@@ -114,7 +71,7 @@
     </div>
     <div class="detailsLogo">
       <i class="ri-hotel-bed-fill"></i>
-      <p>1 camera da letto</p>
+      <p>1 Letto</p>
     </div>
     <div class="detailsLogo">
       <i class="ri-drop-line"></i>
@@ -126,6 +83,7 @@
     </div>
   </div>
 
+  <div class="detailsText">
     <p>Appartamento composto da soggiorno living con angolo cottura, camera da letto e bagno con doccia che si affaccia su un grazioso cortile interno <br>
 
     Per le prenotazioni con tariffa mensile il gas e l'energia elettrica sono da pagare a parte:  <br>
@@ -141,6 +99,7 @@
 
     <p>L'appartamento si trova a breve distanza dal Lingotto Fiere e dalla zona ospedali (Sant' Anna, CTO, Molinette e San Lazzaro), tutto raggiungibile comodamente a piedi.
       Oltre ai numerosi ristoranti e negozi del quartiere, nelle immediate vicinanze si trova l' 8Galley, l' unico tra i centri commerciali di Torino a sorgere nel centro città, il centro è provvisto di 90 negozi di qualità, ma anche di numerosi ristoranti e snackbar aperti 7 giorni su 7 e le 11 sale del cinema Multiplex Pathè. Poco lontano si trova il parco del Valentino il cuore verde di Torino e il suo borgo medievale.</p>
+    </div>
 
   <div class="detailsButton">
     <div>
@@ -158,14 +117,33 @@
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="location">
 
   <h3>Location</h3>
   <em>Via Arsenale 42 - Torino</em>
 
-  <div id="mapSingle">
-    <div id="map"></div>
-  </div>
 
 </div>
 
@@ -175,15 +153,6 @@
 <div id="register">
   <em>TorinoInHome, Silvia Sandano &reg </em>
 </div>
-
-<script>
-  var map = L.map('map').setView([51.505, -0.09], 13);
-
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-</script>
 
     
 

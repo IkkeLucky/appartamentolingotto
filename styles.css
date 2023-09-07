@@ -130,6 +130,14 @@
     height: 40px;
 }
 
+.ri-calendar-event-line {
+  color: whitesmoke;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 
 /* CARROUSEL IMAGES AND CARDS */
 
@@ -203,28 +211,6 @@
 
 /* SINGLE PAGE */
 
-.swiper {
-    width: 1000px;
-    height: 600px;
-    margin-top: 10px;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   #titleSingle {
     margin-left: 35px;
     margin-top: 15px;
@@ -241,18 +227,24 @@
   }
 
   #detailsSingle {
-    margin-left: 35px;
+    margin-left: 15px;
   }
 
   #detailsSingle h3 {
     font-size: 18px;
+    margin-left: 20px;
   }
 
   .detailsLogoContainer {
     display: flex;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .detailsText p {
+    padding-left: 15px;
   }
 
   .detailsLogo {
@@ -277,13 +269,34 @@
     padding-right: 20px;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .detailsButton {
     margin-top: 35px;
+    margin-left: 15px;
     display: flex;
   }
 
   .detailsButton div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     border: 1px solid black;
     border-radius: 20px;
@@ -309,27 +322,16 @@
     color: whitesmoke;
     transition: .4s;
   }
-
+  
   #location {
     margin-left: 35px;
     margin-top: 35px;
-  }
-
-  #map {
-    height: 600px;
-    width: 600px;
   }
 
   #register {
     text-align: center;
     margin-bottom: 55px;
   }
-
-
-@media only screen and (max-width: 989px) and (min-width: 770px) {
-    
-}
-
 
 
 @media only screen and (max-width: 768px) {
@@ -373,9 +375,9 @@
         height: 350px;
     }
 
-    .container {
-      height: 4000;
+
+    .ri-calendar-event-line {
+      margin-right: 10px;
     }
-    
     
 }
