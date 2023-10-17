@@ -10,8 +10,8 @@
 }
 
 .feh-content img {
-    width: 150px;
-    height: 150px;
+    width: 700px;
+    height: 600px;
 }
 
 /* GENERAL STYLING */
@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     height: 95vh;
     overflow: hidden; /* Hide overflow for the container */
+    padding-top: 5px;
 }
 
 .leftSide {
@@ -35,13 +36,22 @@
 
 /* NAVBAR */
 
+.navbar {
+  background-color: #2da4aa!important;
+}
 
 .nav-link {
     font-size: 18px;
 }
 
 .nav-link:hover {
-    color: #2da4aa!important;
+    color: whitesmoke!important;
+    transition: 1s ease;
+}
+
+.collapse {
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 

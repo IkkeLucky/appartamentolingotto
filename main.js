@@ -60,7 +60,7 @@ const markers = [
                 function createInfoWindow () {
                     const infoWindowContent = `
                     <div class="feh-content">
-                        <img src="img/appa3.webp" alt="third apartment">
+                        <img src="img/600700.jpg" alt="third apartment">
                         <h3>Apartment Porta Nuova</h3>
                         <a href="#">View in maps</a>
                     </div>
