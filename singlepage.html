@@ -11,9 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,500&display=swap" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js" integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
     <script src="main.js"></script>
 </head>
 
@@ -61,25 +66,70 @@
 </div>
 
 
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img src="img/appartA/a3.webp"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a4.webp"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a5.webp"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a8.webp"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a6.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a7.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a13.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a14.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a15.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a16.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a17.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a18.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a19.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a20.jpg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartA/a9.webp"  alt=""></li>
+    </ul>
+  </div>
+</div>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    var glide = new Glide('.glide', {
+      type: 'carousel',
+      startAt: 15,
+      perView: 2,
+      autoplay: 3000,
+      focusAt: 'center',
+      // Add other configuration options as needed
+    });
+
+
+    glide.mount();
+});
+  
+</script>
+
+
+
+
+
 <div id="detailsSingle">
   <h3>Descrizione</h3>
 
   <div class="detailsLogoContainer">
     <div class="detailsLogo">
       <i class="ri-user-fill"></i>
-      <p>2 Ospiti</p>
+      <p>4 Ospiti</p>
     </div>
     <div class="detailsLogo">
       <i class="ri-hotel-bed-fill"></i>
-      <p>1 Letto</p>
+      <p>1 Camara di Letto</p>
+    </div>
+    <div class="detailsLogo">
+      <i class="ri-hotel-bed-fill"></i>
+      <p>2 Letti</p>
     </div>
     <div class="detailsLogo">
       <i class="ri-drop-line"></i>
       <p>1 bagno</p>
-    </div>
-    <div class="detailsLogo">
-      <i class="ri-home-line"></i>
-      <p>1 piano</p>
     </div>
   </div>
 
@@ -154,7 +204,7 @@
   <em>TorinoInHome, Silvia Sandano &reg </em>
 </div>
 
-    
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

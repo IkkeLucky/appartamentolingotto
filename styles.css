@@ -5,13 +5,26 @@
     width: 1px;
 }
 
-.feh-content h3 {
-    font-size: 15px;
+.feh-content {
+  max-width: 300px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .feh-content img {
-    width: 700px;
-    height: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.feh-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
 }
 
 /* GENERAL STYLING */
@@ -192,12 +205,17 @@
 .cardLogos {
     display: flex;
     justify-content: start;
-    margin-top: 10px;
+    margin-top: 15px;
     font-family: 'Nunito', sans-serif;
 }
 
 .cardLogos i {
   margin-left: 15px;
+}
+
+.carouselCardContent h2, em {
+  margin-left: 8px;
+  margin-top: 5px;
 }
 
 
@@ -280,8 +298,22 @@
   }
 
 
+  .glide {
+    width: 80%; /* Adjust the width as needed */
+    margin: auto; /* Center the slider */
+    padding-bottom: 30px;
+  }
 
+  .glide__slide {
+    background-color: #ddd; /* Background color of each slide */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center slide content */
+  }
 
+  .glide__slide img {
+    width: 600px;
+    height: 500px;
+  }
 
 
 

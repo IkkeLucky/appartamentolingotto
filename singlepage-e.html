@@ -11,11 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,500&display=swap" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js" integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
     <script src="main.js"></script>
 </head>
 
 <body>
+
+  
+
+
+
 
   <div id="navi">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,7 +46,7 @@
                         <a class="nav-link" href="appartamenti.html">Appartamenti</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="scopri.html">Scopri Torino</a>
+                        <a class="nav-link" href="scopri.html">Scopri Torino</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contattaci.html">Contattaci</a>
@@ -44,56 +56,7 @@
     </nav>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="img/appartE/e1.webp"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e2.jpeg"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e3.jpeg"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e4.jpeg"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e5.jpeg"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e6.jpeg"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e7.webp"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/appartE/e8.jpeg"/>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-</script>
 
 
 <div id="titleSingle">
@@ -101,6 +64,45 @@
   <em>Via Genova 70</em>
   <hr>
 </div>
+
+
+
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img src="img/appartE/e1.webp"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e2.jpeg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e3.jpeg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e4.jpeg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e5.jpeg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e6.jpeg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e8.jpeg"  alt=""></li>
+      <li class="glide__slide"><img src="img/appartE/e7.webp"  alt=""></li>
+    </ul>
+  </div>
+</div>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    var glide = new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 2,
+      autoplay: 3000,
+      focusAt: 'center',
+      // Add other configuration options as needed
+    });
+
+
+    glide.mount();
+});
+  
+</script>
+
+
+
 
 <div id="detailsSingle">
   <h3>Descrizione</h3>
@@ -112,25 +114,35 @@
     </div>
     <div class="detailsLogo">
       <i class="ri-hotel-bed-fill"></i>
-      <p>1 camera da letto</p>
+      <p>1 Camara di Letto</p>
+    </div>
+    <div class="detailsLogo">
+      <i class="ri-hotel-bed-fill"></i>
+      <p>2 Letti</p>
     </div>
     <div class="detailsLogo">
       <i class="ri-drop-line"></i>
       <p>1 bagno</p>
     </div>
-    <div class="detailsLogo">
-      <i class="ri-home-line"></i>
-      <p>1 piano</p>
-    </div>
   </div>
 
-  <p>L'appartamento si trova al primo piano di una palazzina di tre piani senza ascensore di un interno cortile. La cucina attrezzata con forno, piano cottura, microonde e frigorifero si trova entrando sulla sinistra, poi c'è la zona pranzo e il divano letto singolo. La camera letto, da cui si accede al bagno con doccia, si affaccia sulla zona giorno e ha un letto di una piazza e mezza <br><br>
-    Altre cose da tenere a mente <br>
-    Per i soggiorni con sconto mensile luce e gas non sono inclusi</p>
+  <div class="detailsText">
+    <p>Appartamento composto da soggiorno living con angolo cottura, camera da letto e bagno con doccia che si affaccia su un grazioso cortile interno <br>
+
+    Per le prenotazioni con tariffa mensile il gas e l'energia elettrica sono da pagare a parte:  <br>
+    - il gas verrà conteggiato in base al consumo prendendo i numeri all'arrivo e alla partenza ( il riscaldamento è autonomo) <br>
+    - per l'energia elettrica è previsto un forfait di 25 eur mensili
+    al check in verrà richiesto un anticipo bollette da pagare in contanti <br>
+    
+    Le pulizie finali non comprendono l'angolo cottura e il frigorifero che devono essere lasciati puliti, in caso contrario verranno trattenuti 50 eur dalla cauzione
+    
+    Nell'alloggio è proibito fumare, in caso di infrazione verrà applicata una penale di 100 eur</p>
 
     <h3>Dove ti trovera</h3>
 
-    <p>Torino, Piemonte, Italia</p>
+    <p>L'appartamento si trova a breve distanza dal Lingotto Fiere e dalla zona ospedali (Sant' Anna, CTO, Molinette e San Lazzaro), tutto raggiungibile comodamente a piedi.
+      Oltre ai numerosi ristoranti e negozi del quartiere, nelle immediate vicinanze si trova l' 8Galley, l' unico tra i centri commerciali di Torino a sorgere nel centro città, il centro è provvisto di 90 negozi di qualità, ma anche di numerosi ristoranti e snackbar aperti 7 giorni su 7 e le 11 sale del cinema Multiplex Pathè. Poco lontano si trova il parco del Valentino il cuore verde di Torino e il suo borgo medievale.</p>
+    </div>
 
   <div class="detailsButton">
     <div>
@@ -148,14 +160,33 @@
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="location">
 
   <h3>Location</h3>
   <em>Via Arsenale 42 - Torino</em>
 
-  <div id="mapSingle">
-    <div id="map"></div>
-  </div>
 
 </div>
 
@@ -165,15 +196,6 @@
 <div id="register">
   <em>TorinoInHome, Silvia Sandano &reg </em>
 </div>
-
-<script>
-  var map = L.map('map').setView([51.505, -0.09], 13);
-
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-</script>
 
     
 

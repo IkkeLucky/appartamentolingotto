@@ -1,6 +1,3 @@
-
-
-
 const markers = [
     {
         locationName: 'Appartamento Lingotto',
@@ -75,7 +72,7 @@ const markers = [
 
                     const infoWindowContent3 = `
                     <div class="feh-content">
-                        <img src="img/appc3.webp" alt="third apartment">
+                        <img src="img/appartA/a1.webp" style="width: 200px; height: 200px;" alt="third apartment">
                         <h3>Apartment Lingotto</h3>
                     </div>
                     `;
