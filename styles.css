@@ -49,6 +49,14 @@
 
 /* NAVBAR */
 
+/* IN CASE I WANT TO MAKE STICKY NAVBAR 
+#navi {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+} */
+
+
 .navbar {
   background-color: #2da4aa!important;
 }
