@@ -245,8 +245,8 @@
 /* SINGLE PAGE */
 
   #titleSingle {
-    margin-left: 35px;
-    margin-top: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
   #titleSingle h2 {
@@ -257,11 +257,14 @@
 
   #titleSingle em {
     font-weight: 300;
+    
   }
 
   #detailsSingle {
-    margin-left: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
+  
 
   #detailsSingle h3 {
     font-size: 18px;
@@ -292,7 +295,7 @@
 
   .detailsLogo p {
     font-size: 22px;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
 
@@ -321,7 +324,11 @@
   }
 
 
-
+  .singleMap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
 
 
 
@@ -426,9 +433,27 @@
         height: 350px;
     }
 
+    .singleMap {
+      display: flex;
+      justify-content: center;
+      padding-top: 15px;
+    }
+
+    .singleMap iframe {
+      width: 300px;
+      height: 300px;
+    }
 
     .ri-calendar-event-line {
       margin-right: 10px;
     }
     
+    .detailsButton p {
+      padding-left: 10px;
+    }
+
+    .cardLogos {
+      font-size: 12px;
+    }
+
 }
