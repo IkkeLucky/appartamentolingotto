@@ -44,22 +44,13 @@
 
 
 
-/* NAVBAR */
-
-/* IN CASE I WANT TO MAKE STICKY NAVBAR 
-#navi {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-} */
-
-
 .navbar {
   background-color: #2da4aa!important;
 }
 
 .nav-link {
-    font-size: 18px;
+    font-size: 25px;
+    padding-left: 20px!important;
 }
 
 .nav-link:hover {
@@ -119,6 +110,14 @@
   border-radius: 10px;
   width: 100px;
   height: 40px;
+}
+
+#fechaEntrada {
+  border-radius: 10px;
+}
+
+#fechaSalida {
+  border-radius: 10px;
 }
 
 #searchIcon {
